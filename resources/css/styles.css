@@ -3,22 +3,22 @@ body {
 }
 
 div {
-  border: black solid 1px;
+--  border: black solid 1px;
 }
 
 .header {
   display: flex;
 }
 
-.logo h2 {
-  color: MediumAquamarine;
-  padding-left: 10px;
-}
-
 .logo {
   flex-grow: 1;
   display: flex;
   padding-left: 30px;
+}
+
+.logo h2 {
+  padding-left: 10px;
+  color: MediumAquamarine;
 }
 
 nav {
@@ -37,22 +37,86 @@ nav span {
   font-weight: bold;
 }
 
+p {
+  font-family: Georgia;
+  font-size: 17px;
+  color: black;
+}
+
 .container {
   display: flex;
   justify-content: flex-end;
-  --width: 100%;
 }
 
 .body_container {
   display: flex;
-  --flex-flow: column wrap;
+}
+
+.first_column_stories {
+  display: flex;
+  justify-content: space-between;
+}
+
+.first_story {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+}
+
+.second_story {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+}
+
+.main_story_title p {
+  font-family: Georgia;
+  font-weight: bold;
+  font-size: 40px;
+  color: white;
+}
+
+.story_title p {
+  font-family: Georgia;
+  font-weight: bold;
+  font-size: 30px;
+  color: white;
+  width: 300px;
+  display: flex;
+}
+
+.story {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  padding: 30px 30px;
+}
+
+#main_story {
+  background-image: url('../images/img-story-main.png');
+}
+
+#earth_story {
+  background-image: url('../images/img-story-2.png');
+  text-align: center;
+  height: 300px;
+}
+
+#camera_story {
+  background-image: url('../images/img-story-3.png');
+  height: 300px;
+}
+
+#cats_story {
+  display: flex;
+  background-image: url('../images/img-story-1.png');
+  height: 300px;
+  width: 300px;
 }
 
 .box {
   display: flex;
   flex-direction: column;
-  flex-grow: 0;
-
 }
 
 .box img {
@@ -60,17 +124,35 @@ nav span {
   height: 100%;
 }
 
-.column.large {
+#large.column {
   width: 630px;
   flex-direction: column;
 }
 
-.column.medium {
+#medium.column {
   width: 300px;
   flex-direction: column;
 }
 
-.column.small {
+#small.column {
   width: 240px;
   flex-direction: column;
+}
+
+h3.box {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.list_bites {
+  background-color: WhiteSmoke;
+  font-family: Verdana;
+  font-size: 12px;
+  color: DimGray;
+  list-style-type: none;
+}
+
+.box span {
+  display: block;  
+  border-bottom: 1px solid black;
 }
