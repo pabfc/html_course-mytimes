@@ -21,7 +21,7 @@ div {
   color: MediumAquamarine;
 }
 
-nav {
+.container nav {
   color: black;
   font-family: Verdana;
   font-size: 14px;
@@ -29,12 +29,16 @@ nav {
   padding-right: 40px;
 }
 
-nav span {
+.container nav span {
   padding: 20px 10px;
   color: MediumAquamarine;
   font-family: Verdana;
   font-size: 14px;
   font-weight: bold;
+}
+
+.container nav a {
+  color: MediumAquamarine;
 }
 
 p {
@@ -153,6 +157,36 @@ h3.box {
 }
 
 .box span {
-  display: block;  
+  display: block;
   border-bottom: 1px solid black;
+}
+
+.footer {
+  display: flex;
+  background-color: MediumAquamarine;
+  margin: auto;
+  align-items: center;
+  flex-direction: column;
+  font-family: Verdana;
+  font-size: 12px;
+  padding: 50px;
+}
+
+.footer_title {
+  font-family: Georgia;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  justify-content: center;
+  border-right: 2px solid white;
+  padding-right: 25px;
+}
+
+.footer nav {
+  display: inline-block;
+  padding: 20px 10px;
+}
+
+.footer nav a {
+  color: black;
 }
